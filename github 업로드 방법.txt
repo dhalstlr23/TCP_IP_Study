@@ -1,0 +1,23 @@
+1. 파일 추가 (git add)
+새로 생성한 .cpp 파일을 Git이 추적하도록 준비해야 합니다.
+
+Bash
+
+git add .
+이 명령어는 현재 폴더에 있는 모든 변경된 파일과 새로 생성된 파일을 Git의 **스테이징 영역(Staging Area)**에 추가합니다.
+
+2. 변경 사항 기록 (git commit)
+스테이징 영역에 추가된 파일들을 하나의 의미 있는 덩어리로 묶어서 Git 저장소에 기록해야 합니다.
+
+Bash
+
+git commit -m "feat: TCP/IP server and client code"
+여기서 -m은 메시지(Message)를 의미하며, 따옴표 안에 커밋 내용을 요약해서 작성합니다. 이 과정을 통해 파일의 변경 이력이 로컬 저장소에 저장됩니다.
+
+3. 원격 저장소에 업로드 (git push)
+이제 로컬 저장소에 기록된 변경 내용을 GitHub의 원격 저장소로 업로드할 수 있습니다.
+
+Bash
+
+git push -u origin main
+이전 대화에서 Everything up-to-date 메시지가 뜬 것은 이미 add와 commit을 완료한 상태였기 때문입니다. 하지만 새로운 .cpp 파일을 추가했다면, 반드시 git add와 git commit을 먼저 실행한 후 git push를 해야 합니다.
